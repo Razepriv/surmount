@@ -3,7 +3,7 @@
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { FadeIn } from "@/components/anim/FadeIn";
-import { Mail, Calendar, MapPin, ArrowRight } from "lucide-react";
+import { Mail, Calendar, MapPin, ArrowRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
 export default function ContactPage() {
@@ -34,10 +34,17 @@ export default function ContactPage() {
                 
                 <div className="space-y-6">
                   <div className="flex items-start">
+                    <Phone className="w-6 h-6 text-[var(--color-surmount-red)] mr-4 mt-1" />
+                    <div>
+                      <span className="block font-medium text-[var(--color-summit-black)]">Call Us</span>
+                      <a href="tel:+15127618208" className="text-[var(--color-stone-gray)] hover:text-[var(--color-surmount-red)] transition-colors">+1 512 761 8208</a>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
                     <Mail className="w-6 h-6 text-[var(--color-surmount-red)] mr-4 mt-1" />
                     <div>
                       <span className="block font-medium text-[var(--color-summit-black)]">Email Us</span>
-                      <a href="mailto:info@surcxo.com" className="text-[var(--color-stone-gray)] hover:text-[var(--color-surmount-red)] transition-colors">info@surcxo.com</a>
+                      <a href="mailto:Info@surmountcxo.com" className="text-[var(--color-stone-gray)] hover:text-[var(--color-surmount-red)] transition-colors">Info@surmountcxo.com</a>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -60,7 +67,7 @@ export default function ContactPage() {
                   Skip the email tag and book a 30-minute consultation directly with our managing partners.
                 </p>
                 {/* Cal.com or Calendly embed can be placed here. For now, use email CTA. */}
-                <a href="mailto:info@surcxo.com" className="inline-flex items-center text-[var(--color-surmount-red)] font-medium hover:underline">
+                <a href="mailto:Info@surmountcxo.com" className="inline-flex items-center text-[var(--color-surmount-red)] font-medium hover:underline">
                   Email to Schedule <ArrowRight className="w-4 h-4 ml-2" />
                 </a>
              </div>
@@ -69,8 +76,8 @@ export default function ContactPage() {
           {/* Contact Form */}
           <div className="bg-[var(--color-cloud-white)] p-8 md:p-12 border border-[var(--color-platform-gray)] shadow-sm">
              <h3 className="text-2xl font-display mb-8">Send us a message</h3>
-             {/* Form submissions route to info@surcxo.com. Replace mailto action with a backend endpoint (e.g. /api/contact) when ready. */}
-             <form action="mailto:info@surcxo.com" method="post" encType="text/plain" className="space-y-6">
+             {/* Form submissions route to Info@surmountcxo.com. Replace mailto action with a backend endpoint (e.g. /api/contact) when ready. */}
+             <form action="mailto:Info@surmountcxo.com" method="post" encType="text/plain" className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                    <div className="space-y-2">
                       <label htmlFor="firstName" className="text-sm font-medium text-[var(--color-summit-black)] uppercase tracking-wide">First Name</label>

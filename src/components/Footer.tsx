@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
+import { Phone, Mail } from "lucide-react";
 
 const footerLinks = {
   Services: [
@@ -41,6 +42,16 @@ export function Footer() {
             <p className="text-white/60 max-w-sm">
               We build revenue engines and scale execution for mid-market growth companies through operator-led leadership.
             </p>
+            <div className="flex flex-col gap-3 mt-2">
+              <a href="tel:+15127618208" className="flex items-center gap-2 text-white/60 hover:text-[var(--color-surmount-red)] transition-colors text-sm">
+                <Phone className="w-4 h-4 shrink-0" />
+                +1 512 761 8208
+              </a>
+              <a href="mailto:Info@surmountcxo.com" className="flex items-center gap-2 text-white/60 hover:text-[var(--color-surmount-red)] transition-colors text-sm">
+                <Mail className="w-4 h-4 shrink-0" />
+                Info@surmountcxo.com
+              </a>
+            </div>
           </div>
           
           <div className="md:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8">
