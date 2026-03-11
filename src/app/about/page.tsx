@@ -73,7 +73,8 @@ export default function AboutPage() {
          </Container>
        </Section>
 
-       {/* 4.4 Leadership Team */}
+       {/* TEMPORARILY REMOVED — Re-enable when leadership bios are ready */}
+       {/*
        <Section>
          <Container>
            <h2 className="text-4xl font-display mb-12">Leadership Team</h2>
@@ -81,7 +82,6 @@ export default function AboutPage() {
              {members.map((member, i) => (
                <div key={i} className="group">
                  <div className="aspect-[3/4] bg-[var(--color-stone-gray)]/20 mb-6 relative overflow-hidden">
-                   {/* Fallback for image */}
                    <div className="absolute inset-0 flex items-center justify-center text-[var(--color-stone-gray)] font-mono text-xs uppercase tracking-widest bg-[var(--color-platform-gray)] group-hover:bg-[var(--color-surmount-red)]/5 transition-colors">
                      photo: {member.name}
                    </div>
@@ -94,6 +94,7 @@ export default function AboutPage() {
            </div>
          </Container>
        </Section>
+       */}
 
        {/* 4.4 Values */}
        <Section className="bg-[var(--color-deep-charcoal)] text-white">

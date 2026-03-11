@@ -69,6 +69,47 @@ export default function ServicesPage() {
           </div>
         </Container>
       </Section>
+
+      {/* Why Our Services Work */}
+      <Section className="bg-[var(--color-summit-black)] text-white">
+        <Container>
+          <FadeIn>
+            <h2 className="text-4xl md:text-5xl font-display mb-4 text-center">Why Our Services Work</h2>
+            <p className="text-center text-white/60 mb-16 max-w-xl mx-auto">
+              Every engagement is grounded in real operator experience — not theory.
+            </p>
+          </FadeIn>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <FadeIn delay={0.1}>
+              <div className="p-8 border border-white/10 hover:border-[var(--color-surmount-red)] transition-colors duration-300 h-full">
+                <div className="w-10 h-10 rounded-full bg-[var(--color-surmount-red)]/10 flex items-center justify-center text-[var(--color-surmount-red)] mb-6 text-xl font-display font-bold">01</div>
+                <h3 className="text-2xl font-display mb-4">Experienced Leaders</h3>
+                <p className="text-white/70 leading-relaxed">
+                  Every engagement is led by operators with 20+ years of real-world revenue and GTM experience — not analysts, not junior associates. You get the principal, every time.
+                </p>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.2}>
+              <div className="p-8 border border-white/10 hover:border-[var(--color-surmount-red)] transition-colors duration-300 h-full">
+                <div className="w-10 h-10 rounded-full bg-[var(--color-surmount-red)]/10 flex items-center justify-center text-[var(--color-surmount-red)] mb-6 text-xl font-display font-bold">02</div>
+                <h3 className="text-2xl font-display mb-4">Proven Playbooks</h3>
+                <p className="text-white/70 leading-relaxed">
+                  We deploy battle-tested playbooks refined across multiple scale-ups and exits. No experimentation on your dime — we know what works and move fast.
+                </p>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.3}>
+              <div className="p-8 border border-white/10 hover:border-[var(--color-surmount-red)] transition-colors duration-300 h-full">
+                <div className="w-10 h-10 rounded-full bg-[var(--color-surmount-red)]/10 flex items-center justify-center text-[var(--color-surmount-red)] mb-6 text-xl font-display font-bold">03</div>
+                <h3 className="text-2xl font-display mb-4">Measurable Outcomes</h3>
+                <p className="text-white/70 leading-relaxed">
+                  We set clear KPIs at the start of every engagement and report against them weekly. Revenue is a predictable execution activity — and we hold ourselves accountable to that.
+                </p>
+              </div>
+            </FadeIn>
+          </div>
+        </Container>
+      </Section>
     </main>
   );
 }

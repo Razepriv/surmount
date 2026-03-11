@@ -43,6 +43,7 @@ export default function GCCAcceleratorPage() {
       <Section className="bg-white">
         <Container>
           <div className="text-center mb-16 max-w-3xl mx-auto">
+            <p className="text-sm font-mono uppercase tracking-widest text-[var(--color-surmount-red)] mb-4">For US Companies</p>
             <h2 className="text-4xl md:text-5xl font-display mb-6">The Accelerator Roadmap</h2>
             <p className="text-lg text-[var(--color-deep-charcoal)]/80">
               From location strategy to full-scale operations. We handle the heavy lifting while you retain IP and culture.
@@ -61,9 +62,6 @@ export default function GCCAcceleratorPage() {
               <h3 className="text-2xl font-display text-center mb-2">Blueprint</h3>
               <div className="text-center font-mono text-sm text-[var(--color-stone-gray)] mb-6 uppercase tracking-widest">4-6 Weeks</div>
               <p className="text-center text-sm mb-6 max-w-xs mx-auto">Location strategy, function scope, hiring plan, governance, 12-week go-live plan.</p>
-              <div className="flex justify-center">
-                 <span className="font-mono font-bold text-lg">$40k - $90k</span>
-              </div>
             </Card>
 
             {/* Phase 2 */}
@@ -74,9 +72,6 @@ export default function GCCAcceleratorPage() {
               <h3 className="text-2xl font-display text-center mb-2">Launch</h3>
               <div className="text-center font-mono text-sm text-[var(--color-stone-gray)] mb-6 uppercase tracking-widest">12 Weeks</div>
               <p className="text-center text-sm mb-6 max-w-xs mx-auto">Initial hiring, operating cadence, KPI framework, entity setup, year-1 playbook.</p>
-              <div className="flex justify-center">
-                 <span className="font-mono font-bold text-lg">$120k - $220k</span>
-              </div>
             </Card>
 
             {/* Phase 3 */}
@@ -84,12 +79,9 @@ export default function GCCAcceleratorPage() {
               <div className="w-24 h-24 rounded-full bg-white border-4 border-[var(--color-summit-black)] flex items-center justify-center text-3xl font-display font-bold mb-6 mx-auto shadow-lg">
                 03
               </div>
-              <h3 className="text-2xl font-display text-center mb-2">Operate & Scale</h3>
+              <h3 className="text-2xl font-display text-center mb-2">Operate &amp; Scale</h3>
               <div className="text-center font-mono text-sm text-[var(--color-stone-gray)] mb-6 uppercase tracking-widest">Ongoing</div>
               <p className="text-center text-sm mb-6 max-w-xs mx-auto">Talent lifecycle, workspace/IT, finance/tax, continuous optimization.</p>
-              <div className="flex justify-center">
-                 <span className="font-mono font-bold text-lg">$15k - $35k / mo</span>
-              </div>
             </Card>
           </div>
         </Container>
@@ -116,6 +108,52 @@ export default function GCCAcceleratorPage() {
         </Container>
       </Section>
 
+      {/* Global Expansion — New Service: For GCCs expanding into the US */}
+      <Section className="bg-[var(--color-summit-black)] text-white">
+        <Container>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <FadeIn direction="up">
+              <p className="text-sm font-mono uppercase tracking-widest text-[var(--color-surmount-red)] mb-4">New Service</p>
+              <h2 className="text-4xl md:text-5xl font-display mb-6">Global Expansion</h2>
+              <p className="text-xl text-white/80 mb-8 font-light leading-relaxed">
+                For GCCs and global companies looking to establish or expand their US presence. We bring the operator network, market entry playbook, and revenue infrastructure to help you break into North America.
+              </p>
+              <ul className="space-y-4 mb-10">
+                {[
+                  "US Market Entry Strategy",
+                  "Entity Setup & Compliance",
+                  "Revenue & GTM Infrastructure",
+                  "Executive Network Access",
+                  "Go-to-Market Execution Support"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3">
+                    <ArrowRight className="w-4 h-4 text-[var(--color-surmount-red)] shrink-0" />
+                    <span className="text-white/80">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <Button href="/contact" size="lg" className="bg-white text-[var(--color-summit-black)] hover:bg-gray-100">
+                Explore US Expansion
+              </Button>
+            </FadeIn>
+            <FadeIn delay={0.2}>
+              <div className="p-10 border border-white/10 hover:border-[var(--color-surmount-red)] transition-colors duration-300">
+                <Globe2 className="w-16 h-16 text-[var(--color-surmount-red)] mb-8" strokeWidth={0.75} />
+                <h3 className="text-2xl font-display mb-4">Who This Is For</h3>
+                <p className="text-white/70 mb-6 leading-relaxed">
+                  If your GCC or global technology company has proven itself at home and is ready to capture US market share, Surmount provides the fractional CRO leadership and operational scaffolding to make the move with confidence.
+                </p>
+                <div className="space-y-3 text-sm font-mono uppercase tracking-widest text-white/50">
+                  <div className="flex items-center gap-2"><span className="w-2 h-2 bg-[var(--color-surmount-red)] rounded-full"></span> Established GCCs entering the US</div>
+                  <div className="flex items-center gap-2"><span className="w-2 h-2 bg-[var(--color-surmount-red)] rounded-full"></span> Global product companies scaling sales</div>
+                  <div className="flex items-center gap-2"><span className="w-2 h-2 bg-[var(--color-surmount-red)] rounded-full"></span> Non-US firms seeking US partnerships</div>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+        </Container>
+      </Section>
+
       {/* 4.3 Location Strategy Map Placeholder */}
       <Section className="bg-[var(--color-summit-black)] text-white">
         <Container>
@@ -128,9 +166,10 @@ export default function GCCAcceleratorPage() {
               <ul className="space-y-4">
                 {[
                   "India (Bengaluru, Hyderabad, Pune)",
-                  "Mexico (CDMX, Guadalajara)",
-                  "Eastern Europe (Poland, Romania)",
-                  "Portugal (Lisbon)"
+                  "Portugal (Lisbon)",
+                  // ENABLE when regional meetings are confirmed:
+                  // "Middle East",
+                  // "Indonesia",
                 ].map((loc, i) => (
                   <li key={i} className="flex items-center gap-3">
                     <Globe2 className="w-5 h-5 text-[var(--color-surmount-red)]" />
@@ -150,17 +189,22 @@ export default function GCCAcceleratorPage() {
         </Container>
       </Section>
 
-      {/* 4.3 Competitor Context */} 
+      {/* GCC vs. Traditional BPO Comparison */} 
       <Section className="bg-white">
         <Container>
-           <h2 className="text-4xl font-display mb-12 text-center">Why Surmount vs. Traditional BPOs</h2>
+           <div className="text-center mb-12">
+             <h2 className="text-4xl font-display mb-4">GCC vs. Traditional BPO</h2>
+             <p className="text-lg text-[var(--color-deep-charcoal)]/70 max-w-2xl mx-auto">
+               Understanding the structural advantages of owning your capability center versus relying on a traditional outsourcing model.
+             </p>
+           </div>
            <div className="overflow-x-auto">
              <table className="w-full text-left border-collapse min-w-[600px]">
                <thead>
                  <tr className="border-b border-[var(--color-summit-black)]">
                    <th className="py-4 font-display text-xl w-1/3">Criteria</th>
-                   <th className="py-4 font-display text-xl text-[var(--color-surmount-red)] w-1/3 bg-[var(--color-cloud-white)] px-6">Surmount GCC</th>
-                   <th className="py-4 font-display text-xl text-[var(--color-stone-gray)] w-1/3 px-6">Traditional Outsourcing</th>
+                   <th className="py-4 font-display text-xl text-[var(--color-surmount-red)] w-1/3 bg-[var(--color-cloud-white)] px-6">GCC Model</th>
+                   <th className="py-4 font-display text-xl text-[var(--color-stone-gray)] w-1/3 px-6">Traditional BPO</th>
                  </tr>
                </thead>
                <tbody>

@@ -77,7 +77,7 @@ export default function Home() {
                   <BarChart3 size={24} />
                </div>
                <h3 className="text-3xl font-display text-[var(--color-summit-black)] group-hover:text-[var(--color-surmount-red)] transition-colors">Fractional CRO</h3>
-               <p className="text-[var(--color-deep-charcoal)] max-w-sm">Embedded revenue leadership. Pipeline discipline, forecasting, and GTM system redesign.</p>
+               <p className="text-[var(--color-deep-charcoal)] max-w-sm">Embedded revenue leadership backed by 20+ years of operating experience. Pipeline discipline, forecasting, and GTM system redesign.</p>
             </div>
             <div className="mt-12 flex items-center text-sm font-medium uppercase tracking-wide group-hover:translate-x-2 transition-transform">
               Learn More <ArrowRight className="ml-2 w-4 h-4" />
@@ -90,7 +90,7 @@ export default function Home() {
                   <Globe2 size={24} />
                </div>
                <h3 className="text-3xl font-display text-[var(--color-summit-black)] group-hover:text-[var(--color-surmount-red)] transition-colors">GCC Accelerator</h3>
-               <p className="text-[var(--color-deep-charcoal)] max-w-sm">Build, scale, and optimize your global capability center with optional transfer readiness.</p>
+               <p className="text-[var(--color-deep-charcoal)] max-w-sm">Build, scale, and optimize your global capability center — led by operators with 20–30 years of experience in scaling global operations.</p>
             </div>
             <div className="mt-12 flex items-center text-sm font-medium uppercase tracking-wide group-hover:translate-x-2 transition-transform">
               Learn More <ArrowRight className="ml-2 w-4 h-4" />
@@ -105,8 +105,8 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 border-t border-white/20 pt-12">
             {[
               { label: "GCCs in India", value: "1,760+" },
-              { label: "Avg. CRO Retainer", value: "$10k-25k" },
               { label: "Revenue Lift", value: ">40%" },
+              { label: "Companies Helped", value: "~5" },
               { label: "Projected GCCs", value: "2,400+" }
             ].map((stat, i) => (
               <FadeIn key={i} delay={i * 0.1} className="flex flex-col gap-2">
@@ -118,7 +118,32 @@ export default function Home() {
         </Container>
       </Section>
       
-      {/* 4.1 Section 5: Differentiation Pillars */}
+      {/* Sectors We've Scaled */}
+      <section className="bg-white border-b border-[var(--color-terrain-beige)]/30 py-6">
+        <Container>
+          <div className="flex flex-wrap items-center gap-3">
+            <span className="text-sm uppercase tracking-widest text-[var(--color-stone-gray)] mr-4 font-medium">Sectors We&apos;ve Scaled:</span>
+            {[
+              { name: "Enterprise SaaS", assisted: true },
+              { name: "IoT", assisted: true },
+              { name: "Developer-Led Hardware", assisted: true },
+              { name: "E-Commerce", assisted: false },
+              { name: "Deep Tech", assisted: false },
+              { name: "AI", assisted: false },
+            ].map((v, i) => (
+              <span key={i} className={`text-sm font-mono uppercase tracking-widest px-3 py-1 border ${
+                v.assisted
+                  ? "text-[var(--color-surmount-red)] border-[var(--color-surmount-red)]/30 bg-[var(--color-surmount-red)]/5"
+                  : "text-[var(--color-stone-gray)] border-[var(--color-terrain-beige)]"
+              }`}>
+                {v.name}
+              </span>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* 4.1 Section 5: Differentiation Pillars */
       <Section className="bg-[var(--color-cloud-white)]">
         <Container>
           <div className="mb-16 max-w-xl">
@@ -130,7 +155,7 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
              {[
-               { title: "System Engineering", desc: "Revenue is a machine, not magic. We architect the process first." },
+               { title: "Real World Experience of Scale-Up and Exits", desc: "Revenue is a predictable execution activity. We bring decades of operator experience to your growth engine." },
                { title: "Operator-Led", desc: "No consultants. Only former CROs and VPs who have carried a bag." },
                { title: "GCC Acceleration", desc: "Unlock global talent without the outsourcing agency markup." }
              ].map((card, i) => (

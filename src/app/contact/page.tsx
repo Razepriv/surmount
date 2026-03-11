@@ -37,7 +37,7 @@ export default function ContactPage() {
                     <Mail className="w-6 h-6 text-[var(--color-surmount-red)] mr-4 mt-1" />
                     <div>
                       <span className="block font-medium text-[var(--color-summit-black)]">Email Us</span>
-                      <a href="mailto:growth@surmount.com" className="text-[var(--color-stone-gray)] hover:text-[var(--color-surmount-red)] transition-colors">growth@surmount.com</a>
+                      <a href="mailto:info@surcxo.com" className="text-[var(--color-stone-gray)] hover:text-[var(--color-surmount-red)] transition-colors">info@surcxo.com</a>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -59,12 +59,9 @@ export default function ContactPage() {
                 <p className="text-sm text-[var(--color-deep-charcoal)]/70 mb-6">
                   Skip the email tag and book a 30-minute consultation directly with our managing partners.
                 </p>
-                {/* Visual Placeholder for Embed */}
-                <div className="w-full h-16 bg-white border border-dashed border-[var(--color-stone-gray)] flex items-center justify-center text-[var(--color-stone-gray)] text-sm font-mono mb-4">
-                  [Cal.com Embed Widget]
-                </div>
-                <a href="#" className="inline-flex items-center text-[var(--color-surmount-red)] font-medium hover:underline">
-                  View Availability <ArrowRight className="w-4 h-4 ml-2" />
+                {/* Cal.com or Calendly embed can be placed here. For now, use email CTA. */}
+                <a href="mailto:info@surcxo.com" className="inline-flex items-center text-[var(--color-surmount-red)] font-medium hover:underline">
+                  Email to Schedule <ArrowRight className="w-4 h-4 ml-2" />
                 </a>
              </div>
           </div>
@@ -72,7 +69,8 @@ export default function ContactPage() {
           {/* Contact Form */}
           <div className="bg-[var(--color-cloud-white)] p-8 md:p-12 border border-[var(--color-platform-gray)] shadow-sm">
              <h3 className="text-2xl font-display mb-8">Send us a message</h3>
-             <form className="space-y-6">
+             {/* Form submissions route to info@surcxo.com. Replace mailto action with a backend endpoint (e.g. /api/contact) when ready. */}
+             <form action="mailto:info@surcxo.com" method="post" encType="text/plain" className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                    <div className="space-y-2">
                       <label htmlFor="firstName" className="text-sm font-medium text-[var(--color-summit-black)] uppercase tracking-wide">First Name</label>

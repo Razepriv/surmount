@@ -112,7 +112,6 @@ export default function FractionalCROPage() {
         </Container>
       </Section>
       
-      {/* 4.2 Packaging & Pricing */}
       <Section className="bg-white">
         <Container>
           <h2 className="text-4xl md:text-5xl font-display mb-16 text-center">Engagement Models</h2>
@@ -121,8 +120,7 @@ export default function FractionalCROPage() {
              {/* Model 1 */}
              <Card variant="outline" className="border border-[var(--color-terrain-beige)]">
                <h3 className="text-2xl font-display mb-2">Revenue Reset</h3>
-               <div className="text-3xl font-mono mb-6">$45k - $75k</div>
-               <p className="text-sm text-[var(--color-stone-gray)] mb-6 uppercase tracking-widest">Fixed Fee Project</p>
+               <p className="text-sm text-[var(--color-stone-gray)] mb-6 uppercase tracking-widest">90-Day Intensive</p>
                <ul className="space-y-4 mb-8">
                  {["90-Day Intensive", "Full Diagnostic", "GTM Roadmap", "Quick Wins Execution"].map((item, i) => (
                    <li key={i} className="flex items-center gap-3 text-sm">
@@ -130,7 +128,6 @@ export default function FractionalCROPage() {
                    </li>
                  ))}
                </ul>
-               <Button variant="outline" fullWidth href="/contact">Select Reset</Button>
              </Card>
 
              {/* Model 2 (Highlighted) */}
@@ -139,7 +136,6 @@ export default function FractionalCROPage() {
                  Most Popular
                </div>
                <h3 className="text-2xl font-display mb-2">Scale Retainer</h3>
-               <div className="text-3xl font-mono mb-6">$18k - $22k<span className="text-lg text-[var(--color-stone-gray)]">/mo</span></div>
                <p className="text-sm text-[var(--color-stone-gray)] mb-6 uppercase tracking-widest">2-2.5 Days / Week</p>
                <ul className="space-y-4 mb-8">
                  {["6-Month Minimum term", "Full Fractional CRO Role", "Weekly ExCo Participation", "Hiring & Training"].map((item, i) => (
@@ -148,13 +144,11 @@ export default function FractionalCROPage() {
                    </li>
                  ))}
                </ul>
-               <Button variant="primary" fullWidth href="/contact">Select Scale</Button>
              </Card>
 
              {/* Model 3 */}
              <Card variant="outline" className="border border-[var(--color-terrain-beige)]">
                <h3 className="text-2xl font-display mb-2">Build Retainer</h3>
-               <div className="text-3xl font-mono mb-6">$12k - $15k<span className="text-lg text-[var(--color-stone-gray)]">/mo</span></div>
                <p className="text-sm text-[var(--color-stone-gray)] mb-6 uppercase tracking-widest">1-1.5 Days / Week</p>
                <ul className="space-y-4 mb-8">
                  {["3-Month Minimum term", "Strategic Advisory", "Weekly Forecast Call", "Playbook Design"].map((item, i) => (
@@ -163,8 +157,12 @@ export default function FractionalCROPage() {
                    </li>
                  ))}
                </ul>
-               <Button variant="outline" fullWidth href="/contact">Select Build</Button>
              </Card>
+          </div>
+
+          <div className="mt-16 text-center">
+            <p className="text-[var(--color-deep-charcoal)]/70 mb-6">Pricing is scoped to each engagement. Let&apos;s find the right fit for your business.</p>
+            <Button href="/contact" size="lg">Book a Strategy Call</Button>
           </div>
         </Container>
       </Section>
