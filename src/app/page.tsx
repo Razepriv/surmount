@@ -143,7 +143,7 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* 4.1 Section 5: Differentiation Pillars */
+      {/* 4.1 Section 5: Differentiation Pillars */}
       <Section className="bg-[var(--color-cloud-white)]">
         <Container>
           <div className="mb-16 max-w-xl">
