@@ -10,10 +10,10 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-[var(--color-cloud-white)]">
       {/* 4.5 Hero Section */}
-      <Section className="relative pt-48 pb-12 bg-[var(--color-summit-black)] text-white">
+      <Section className="relative pt-32 sm:pt-40 md:pt-48 pb-12 bg-[var(--color-summit-black)] text-white">
         <Container>
           <FadeIn direction="up">
-            <h1 className="text-5xl md:text-8xl font-display mb-8">Let's Talk Growth</h1>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display mb-8">Let&apos;s Talk Growth</h1>
             <p className="text-xl md:text-2xl font-light text-white/80 max-w-2xl leading-relaxed">
               Ready to scale your revenue operations or expand your global footprint?
             </p>
@@ -21,8 +21,8 @@ export default function ContactPage() {
         </Container>
       </Section>
 
-      <Section className="bg-white -mt-12 pt-24">
-        <Container className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <Section className="bg-white -mt-8 md:-mt-12 pt-16 md:pt-24">
+        <Container className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
           
           {/* Contact Information & Context */}
           <div className="space-y-12">
@@ -74,29 +74,29 @@ export default function ContactPage() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-[var(--color-cloud-white)] p-8 md:p-12 border border-[var(--color-platform-gray)] shadow-sm">
-             <h3 className="text-2xl font-display mb-8">Send us a message</h3>
+          <div className="bg-[var(--color-cloud-white)] p-6 sm:p-8 md:p-12 border border-[var(--color-platform-gray)] shadow-sm">
+             <h3 className="text-xl sm:text-2xl font-display mb-6 md:mb-8">Send us a message</h3>
              {/* Form submissions route to Info@surmountcxo.com. Replace mailto action with a backend endpoint (e.g. /api/contact) when ready. */}
-             <form action="mailto:Info@surmountcxo.com" method="post" encType="text/plain" className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+             <form action="mailto:Info@surmountcxo.com" method="post" encType="text/plain" className="space-y-5 md:space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6">
                    <div className="space-y-2">
                       <label htmlFor="firstName" className="text-sm font-medium text-[var(--color-summit-black)] uppercase tracking-wide">First Name</label>
-                      <input type="text" id="firstName" className="w-full bg-white border border-[var(--color-platform-gray)] p-3 focus:outline-none focus:border-[var(--color-surmount-red)] transition-colors" placeholder="Jane" />
+                      <input type="text" id="firstName" className="w-full bg-white border border-[var(--color-platform-gray)] p-3 text-base focus:outline-none focus:border-[var(--color-surmount-red)] transition-colors" placeholder="Jane" />
                    </div>
                    <div className="space-y-2">
                       <label htmlFor="lastName" className="text-sm font-medium text-[var(--color-summit-black)] uppercase tracking-wide">Last Name</label>
-                      <input type="text" id="lastName" className="w-full bg-white border border-[var(--color-platform-gray)] p-3 focus:outline-none focus:border-[var(--color-surmount-red)] transition-colors" placeholder="Doe" />
+                      <input type="text" id="lastName" className="w-full bg-white border border-[var(--color-platform-gray)] p-3 text-base focus:outline-none focus:border-[var(--color-surmount-red)] transition-colors" placeholder="Doe" />
                    </div>
                 </div>
 
                 <div className="space-y-2">
                    <label htmlFor="email" className="text-sm font-medium text-[var(--color-summit-black)] uppercase tracking-wide">Work Email</label>
-                   <input type="email" id="email" className="w-full bg-white border border-[var(--color-platform-gray)] p-3 focus:outline-none focus:border-[var(--color-surmount-red)] transition-colors" placeholder="jane@company.com" />
+                   <input type="email" id="email" className="w-full bg-white border border-[var(--color-platform-gray)] p-3 text-base focus:outline-none focus:border-[var(--color-surmount-red)] transition-colors" placeholder="jane@company.com" />
                 </div>
 
                 <div className="space-y-2">
-                   <label htmlFor="interest" className="text-sm font-medium text-[var(--color-summit-black)] uppercase tracking-wide">I'm interested in...</label>
-                   <select id="interest" className="w-full bg-white border border-[var(--color-platform-gray)] p-3 focus:outline-none focus:border-[var(--color-surmount-red)] transition-colors text-[var(--color-deep-charcoal)]">
+                   <label htmlFor="interest" className="text-sm font-medium text-[var(--color-summit-black)] uppercase tracking-wide">I&apos;m interested in...</label>
+                   <select id="interest" className="w-full bg-white border border-[var(--color-platform-gray)] p-3 text-base focus:outline-none focus:border-[var(--color-surmount-red)] transition-colors text-[var(--color-deep-charcoal)]">
                       <option>Fractional CRO Leadership</option>
                       <option>GCC Accelerator</option>
                       <option>RevOps Audit</option>
@@ -106,7 +106,7 @@ export default function ContactPage() {
 
                 <div className="space-y-2">
                    <label htmlFor="message" className="text-sm font-medium text-[var(--color-summit-black)] uppercase tracking-wide">Message</label>
-                   <textarea id="message" rows={4} className="w-full bg-white border border-[var(--color-platform-gray)] p-3 focus:outline-none focus:border-[var(--color-surmount-red)] transition-colors" placeholder="Tell us about your current growth challenges..."></textarea>
+                   <textarea id="message" rows={4} className="w-full bg-white border border-[var(--color-platform-gray)] p-3 text-base focus:outline-none focus:border-[var(--color-surmount-red)] transition-colors" placeholder="Tell us about your current growth challenges..."></textarea>
                 </div>
 
                 <Button variant="primary" className="w-full justify-center">Send Message</Button>

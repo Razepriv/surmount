@@ -54,10 +54,10 @@ const insights = [
 export default function InsightsPage() {
   return (
     <main className="min-h-screen bg-[var(--color-cloud-white)]">
-      <Section className="pt-48 pb-24 bg-[var(--color-summit-black)] text-white">
+      <Section className="pt-32 sm:pt-40 md:pt-48 pb-16 md:pb-24 bg-[var(--color-summit-black)] text-white">
         <Container>
            <FadeIn direction="up">
-             <h1 className="text-5xl md:text-8xl font-display mb-8">Insights</h1>
+             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display mb-8">Insights</h1>
              <p className="text-xl md:text-2xl font-light text-white/80 max-w-2xl leading-relaxed">
                Field notes on scaling revenue, operations, and global teams.
              </p>
@@ -70,31 +70,29 @@ export default function InsightsPage() {
           <StaggerChildren className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                {insights.map((item, i) => (
                  <FadeIn key={i}>
-                   <Card className="h-full group cursor-pointer hover:shadow-lg transition-all duration-300 border border-[var(--color-platform-gray)]">
-                     <div className="p-8 flex flex-col h-full">
+                   <Card className="h-full group cursor-pointer hover:shadow-lg transition-all duration-300 border border-[var(--color-platform-gray)] flex flex-col">
                        <div className="flex items-center justify-between mb-6">
                          <span className="text-xs font-mono uppercase tracking-widest text-[var(--color-surmount-red)] bg-[var(--color-surmount-red)]/5 px-2 py-1 rounded-sm">
                            {item.category}
                          </span>
                          <item.icon className="w-5 h-5 text-[var(--color-stone-gray)]" />
                        </div>
-                       
-                       <h3 className="text-2xl font-display mb-4 group-hover:text-[var(--color-surmount-red)] transition-colors">
+
+                       <h3 className="text-xl sm:text-2xl font-display mb-4 group-hover:text-[var(--color-surmount-red)] transition-colors">
                          {item.title}
                        </h3>
-                       
-                       <p className="text-[var(--color-deep-charcoal)]/80 mb-8 flex-grow leading-relaxed">
+
+                       <p className="text-[var(--color-deep-charcoal)]/80 mb-8 flex-grow leading-relaxed text-sm sm:text-base">
                          {item.excerpt}
                        </p>
-                       
+
                        <div className="flex items-center justify-between border-t border-[var(--color-platform-gray)] pt-6 mt-auto">
                           <div className="text-xs text-[var(--color-stone-gray)] font-medium">
                             <span className="block text-[var(--color-summit-black)] mb-1">{item.author}</span>
-                            {item.date} • {item.readTime}
+                            {item.date} &middot; {item.readTime}
                           </div>
                           <ArrowUpRight className="w-5 h-5 text-[var(--color-platform-gray)] group-hover:text-[var(--color-surmount-red)] transition-colors" />
                        </div>
-                     </div>
                    </Card>
                  </FadeIn>
                ))}

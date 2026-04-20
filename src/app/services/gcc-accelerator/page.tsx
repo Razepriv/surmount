@@ -12,13 +12,13 @@ export default function GCCAcceleratorPage() {
   return (
     <main className="min-h-screen bg-[var(--color-cloud-white)]">
       {/* 4.3 Hero */}
-      <section className="relative w-full h-screen min-h-[700px] flex items-center overflow-hidden bg-[var(--color-summit-black)] text-white">
-        <Container className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center h-full pt-20">
+      <section className="relative w-full min-h-[60vh] md:min-h-[80vh] lg:h-screen lg:min-h-[700px] flex items-center overflow-hidden bg-[var(--color-summit-black)] text-white">
+        <Container className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center py-32 md:py-20 md:h-full">
           <FadeIn direction="up">
-            <h1 className="text-5xl md:text-7xl font-display mb-6 leading-[1.1]">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-display mb-6 leading-[1.1]">
               GCC Business <br/> <span className="text-[var(--color-surmount-red)]">Accelerator</span>
             </h1>
-            <p className="text-xl text-white/80 max-w-lg mb-8 font-light">
+            <p className="text-lg md:text-xl text-white/80 max-w-lg mb-8 font-light">
               Build, scale, and optimize your global capability center — with optional transfer readiness.
             </p>
             <div className="flex gap-4">
@@ -27,8 +27,8 @@ export default function GCCAcceleratorPage() {
               </Button>
             </div>
           </FadeIn>
-          
-          <div className="h-[400px] md:h-full w-full relative">
+
+          <div className="hidden md:block h-full w-full relative">
             <SceneWrapper className="w-full h-full">
               <PlaceholderGeo />
             </SceneWrapper>
@@ -44,7 +44,7 @@ export default function GCCAcceleratorPage() {
         <Container>
           <div className="text-center mb-16 max-w-3xl mx-auto">
             <p className="text-sm font-mono uppercase tracking-widest text-[var(--color-surmount-red)] mb-4">For US Companies</p>
-            <h2 className="text-4xl md:text-5xl font-display mb-6">The Accelerator Roadmap</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display mb-6">The Accelerator Roadmap</h2>
             <p className="text-lg text-[var(--color-deep-charcoal)]/80">
               From location strategy to full-scale operations. We handle the heavy lifting while you retain IP and culture.
             </p>
@@ -114,7 +114,7 @@ export default function GCCAcceleratorPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <FadeIn direction="up">
               <p className="text-sm font-mono uppercase tracking-widest text-[var(--color-surmount-red)] mb-4">New Service</p>
-              <h2 className="text-4xl md:text-5xl font-display mb-6">Global Expansion</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-display mb-6">Global Expansion</h2>
               <p className="text-xl text-white/80 mb-8 font-light leading-relaxed">
                 For GCCs and global companies looking to establish or expand their US presence. We bring the operator network, market entry playbook, and revenue infrastructure to help you break into North America.
               </p>
@@ -193,7 +193,7 @@ export default function GCCAcceleratorPage() {
       <Section className="bg-white">
         <Container>
            <div className="text-center mb-12">
-             <h2 className="text-4xl font-display mb-4">GCC vs. Traditional BPO</h2>
+             <h2 className="text-3xl sm:text-4xl font-display mb-4">GCC vs. Traditional BPO</h2>
              <p className="text-lg text-[var(--color-deep-charcoal)]/70 max-w-2xl mx-auto">
                Understanding the structural advantages of owning your capability center versus relying on a traditional outsourcing model.
              </p>
@@ -229,7 +229,7 @@ export default function GCCAcceleratorPage() {
 
       <Section className="bg-[var(--color-deep-charcoal)] text-white text-center">
         <Container>
-          <h2 className="text-3xl md:text-5xl font-display mb-8">Ready to Scale globally?</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display mb-8">Ready to Scale Globally?</h2>
           <Button href="/contact" size="lg" className="bg-white text-[var(--color-surmount-red)] hover:bg-[var(--color-cloud-white)]">
              Compare Locations
           </Button>

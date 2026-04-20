@@ -26,11 +26,11 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[var(--color-cloud-white)]">
        {/* 4.4 Mission & Vision */}
-       <Section className="relative pt-48 pb-24 bg-[var(--color-summit-black)] text-white">
+       <Section className="relative pt-32 sm:pt-40 md:pt-48 pb-16 md:pb-24 bg-[var(--color-summit-black)] text-white">
          <Container>
            <FadeIn direction="up">
-             <h1 className="text-5xl md:text-8xl font-display mb-12">About Surmount</h1>
-             <p className="text-2xl md:text-3xl font-light text-white/80 max-w-4xl leading-relaxed">
+             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display mb-8 md:mb-12">About Surmount</h1>
+             <p className="text-xl sm:text-2xl md:text-3xl font-light text-white/80 max-w-4xl leading-relaxed">
                We exist to bridge the execution gap between ambition and reality.
              </p>
              <div className="w-24 h-1 bg-[var(--color-surmount-red)] mt-12 mb-12"></div>
@@ -43,9 +43,9 @@ export default function AboutPage() {
 
        {/* 4.4 Founding Story / Timeline */}
        <Section className="bg-white">
-         <Container className="grid grid-cols-1 md:grid-cols-2 gap-16">
+         <Container className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
            <div>
-             <h2 className="text-4xl font-display mb-8">Our Origins</h2>
+             <h2 className="text-3xl sm:text-4xl font-display mb-8">Our Origins</h2>
              <div className="space-y-8 pl-4 border-l-2 border-[var(--color-terrain-beige)]">
                <div className="relative pl-8 pb-8">
                  <div className="absolute -left-[21px] top-1 w-4 h-4 rounded-full bg-[var(--color-surmount-red)] ring-4 ring-white"></div>
@@ -67,7 +67,7 @@ export default function AboutPage() {
                </div>
              </div>
            </div>
-           <div className="flex items-center justify-center bg-[var(--color-cloud-white)] p-12">
+           <div className="hidden md:flex items-center justify-center bg-[var(--color-cloud-white)] p-12">
               <Mountain className="w-48 h-48 text-[var(--color-terrain-beige)]" strokeWidth={0.5} />
            </div>
          </Container>

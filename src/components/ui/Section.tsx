@@ -13,7 +13,7 @@ export function Section({ children, className, id, fullWidth = false }: SectionP
     <section 
       id={id} 
       className={cn(
-        "py-24 md:py-32 relative overflow-hidden", 
+        "py-16 sm:py-20 md:py-24 lg:py-32 relative overflow-hidden",
         className
       )}
     >

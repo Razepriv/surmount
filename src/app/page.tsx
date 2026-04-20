@@ -23,14 +23,14 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[var(--color-cloud-white)]">
       {/* 4.1 Section 1: Hero (Full Viewport) */}
-      <section className="relative w-full h-screen min-h-[700px] flex items-center overflow-hidden">
-        <Container className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center h-full pt-20">
-          <FadeIn direction="up" className="flex flex-col gap-8 max-w-2xl">
+      <section className="relative w-full min-h-[85vh] md:h-screen md:min-h-[700px] flex items-center overflow-hidden">
+        <Container className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center py-28 sm:py-32 md:py-0 md:h-full md:pt-20">
+          <FadeIn direction="up" className="flex flex-col gap-6 md:gap-8 max-w-2xl">
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-display text-[var(--color-summit-black)] leading-[0.95] tracking-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display text-[var(--color-summit-black)] leading-[0.95] tracking-tight">
                 We Build <br/> Revenue Engines. <br/> <span className="text-[var(--color-stone-gray)]">We Scale Execution.</span>
               </h1>
-              <p className="text-lg md:text-xl text-[var(--color-deep-charcoal)] max-w-lg leading-relaxed font-light">
+              <p className="text-base sm:text-lg md:text-xl text-[var(--color-deep-charcoal)] max-w-lg leading-relaxed font-light">
                 Fractional CRO leadership and GCC acceleration for mid-market growth companies.
               </p>
             </div>
@@ -71,7 +71,7 @@ export default function Home() {
       {/* 4.1 Section 2: Two Engines (Split Panel) */}
       <section className="relative w-full bg-white border-y border-[var(--color-terrain-beige)]/30">
         <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-[var(--color-terrain-beige)]/30">
-          <Link href="/services/fractional-cro" className="group relative p-12 md:p-24 flex flex-col justify-between min-h-[400px] hover:bg-gray-50 transition-colors">
+          <Link href="/services/fractional-cro" className="group relative p-8 sm:p-12 md:p-16 lg:p-24 flex flex-col justify-between min-h-[320px] md:min-h-[400px] hover:bg-gray-50 transition-colors">
             <div className="space-y-6">
                <div className="w-12 h-12 rounded-full bg-[var(--color-surmount-red)]/5 flex items-center justify-center text-[var(--color-surmount-red)] group-hover:scale-110 transition-transform duration-300">
                   <BarChart3 size={24} />
@@ -84,7 +84,7 @@ export default function Home() {
             </div>
           </Link>
           
-          <Link href="/services/gcc-accelerator" className="group relative p-12 md:p-24 flex flex-col justify-between min-h-[400px] hover:bg-gray-50 transition-colors">
+          <Link href="/services/gcc-accelerator" className="group relative p-8 sm:p-12 md:p-16 lg:p-24 flex flex-col justify-between min-h-[320px] md:min-h-[400px] hover:bg-gray-50 transition-colors">
             <div className="space-y-6">
                <div className="w-12 h-12 rounded-full bg-[var(--color-surmount-red)]/5 flex items-center justify-center text-[var(--color-surmount-red)] group-hover:scale-110 transition-transform duration-300">
                   <Globe2 size={24} />
@@ -102,7 +102,7 @@ export default function Home() {
       {/* 4.1 Section 3: Market Context (Animated Numbers) */}
       <Section className="bg-[var(--color-summit-black)] text-white">
         <Container>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 border-t border-white/20 pt-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-12 border-t border-white/20 pt-8 md:pt-12">
             {[
               { label: "GCCs in India", value: "1,760+" },
               { label: "Revenue Lift", value: ">40%" },
@@ -110,7 +110,7 @@ export default function Home() {
               { label: "Projected GCCs", value: "2,400+" }
             ].map((stat, i) => (
               <FadeIn key={i} delay={i * 0.1} className="flex flex-col gap-2">
-                <span className="text-4xl md:text-5xl font-mono text-[var(--color-surmount-red)]">{stat.value}</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl font-mono text-[var(--color-surmount-red)]">{stat.value}</span>
                 <span className="text-sm uppercase tracking-widest text-white/60">{stat.label}</span>
               </FadeIn>
             ))}
@@ -147,7 +147,7 @@ export default function Home() {
       <Section className="bg-[var(--color-cloud-white)]">
         <Container>
           <div className="mb-16 max-w-xl">
-             <h2 className="text-4xl md:text-5xl font-display mb-6">Why Surmount?</h2>
+             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display mb-6">Why Surmount?</h2>
              <p className="text-lg text-[var(--color-deep-charcoal)]/80">
                Most companies fail at scale because they hire sales leaders before building revenue systems. We fix the order of operations.
              </p>
@@ -172,7 +172,7 @@ export default function Home() {
       {/* CTA Banner */}
       <Section className="bg-[var(--color-deep-charcoal)] text-white text-center">
         <Container className="flex flex-col items-center gap-8">
-          <h2 className="text-4xl md:text-6xl font-display">Ready to Build Your Revenue Engine?</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display">Ready to Build Your Revenue Engine?</h2>
           <Button href="/contact" size="lg" className="bg-white text-[var(--color-surmount-red)] hover:bg-[var(--color-cloud-white)]">
             Schedule a Strategy Call
           </Button>

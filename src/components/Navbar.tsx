@@ -58,9 +58,9 @@ export default function Navbar() {
   };
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"}`}>
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-        <Link href="/" className="flex items-center relative z-50 h-10 w-40">
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-3 md:py-4" : "bg-transparent py-4 md:py-6"}`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 flex items-center justify-between">
+        <Link href="/" className="flex items-center relative z-50 h-8 w-32 sm:h-10 sm:w-40">
           <Image 
             src="/surmount logo.svg" 
             alt="Surmount" 
@@ -94,33 +94,33 @@ export default function Navbar() {
         </nav>
 
         {/* Mobile Toggle */}
-        <button className={`md:hidden relative z-50 ${textColorClass}`} onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
+        <button className={`md:hidden relative z-50 p-2 -mr-2 ${textColorClass}`} onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
           {isOpen ? <X size={24} className="text-[var(--color-summit-black)]" /> : <Menu size={24} />}
         </button>
 
         {/* Mobile Nav */}
         <AnimatePresence>
           {isOpen && (
-            <motion.nav 
+            <motion.nav
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              className="fixed inset-0 bg-[var(--color-cloud-white)] flex flex-col items-center justify-center gap-8 z-40 md:hidden"
+              className="fixed inset-0 bg-[var(--color-cloud-white)] flex flex-col items-center justify-center gap-6 sm:gap-8 z-40 md:hidden px-6"
             >
               {links.map((link) => (
-                <Link 
-                  key={link.name} 
+                <Link
+                  key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-2xl font-display text-[var(--color-summit-black)]"
+                  className={`text-xl sm:text-2xl font-display transition-colors ${isActive(link.href) ? "text-[var(--color-surmount-red)]" : "text-[var(--color-summit-black)]"}`}
                 >
                   {link.name}
                 </Link>
               ))}
-              <Link 
-                href="/contact" 
+              <Link
+                href="/contact"
                 onClick={() => setIsOpen(false)}
-                className="text-lg font-medium bg-[var(--color-surmount-red)] text-white px-8 py-3 mt-4"
+                className="text-base sm:text-lg font-medium bg-[var(--color-surmount-red)] text-white px-8 py-3 mt-4 w-full sm:w-auto text-center"
               >
                 Schedule Diagnostic
               </Link>

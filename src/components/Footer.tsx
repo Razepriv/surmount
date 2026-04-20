@@ -27,11 +27,11 @@ const footerLinks = {
 
 export function Footer() {
   return (
-    <footer className="bg-[var(--color-summit-black)] text-white pt-24 pb-12">
+    <footer className="bg-[var(--color-summit-black)] text-white pt-16 md:pt-24 pb-8 md:pb-12">
       <Container size="xl">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 border-b border-white/10 pb-16">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 border-b border-white/10 pb-12 md:pb-16">
           <div className="md:col-span-4 flex flex-col gap-6">
-            <Link href="/" className="mb-6 relative h-12 w-48 block">
+            <Link href="/" className="mb-4 md:mb-6 relative h-10 md:h-12 w-40 md:w-48 block">
               <Image 
                 src="/surmount logo.svg" 
                 alt="Surmount" 
@@ -74,7 +74,7 @@ export function Footer() {
           </div>
         </div>
         
-        <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-white/40 text-sm">
+        <div className="pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-white/40 text-xs sm:text-sm">
           <p>© {new Date().getFullYear()} Surmount CxO Partners. All rights reserved.</p>
           <div className="flex gap-6">
             <span className="font-mono text-xs">BENGALURU • NEW YORK • LONDON</span>

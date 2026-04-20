@@ -9,10 +9,10 @@ import { ArrowRight, Globe2, TrendingUp } from "lucide-react";
 export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-[var(--color-cloud-white)]">
-      <Section className="relative pt-48 pb-24 bg-[var(--color-summit-black)] text-white">
+      <Section className="relative pt-32 sm:pt-40 md:pt-48 pb-16 md:pb-24 bg-[var(--color-summit-black)] text-white">
         <Container>
           <FadeIn direction="up">
-            <h1 className="text-5xl md:text-8xl font-display mb-8">Our Services</h1>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display mb-8">Our Services</h1>
             <p className="text-xl md:text-2xl font-light text-white/80 max-w-2xl leading-relaxed">
               We provide the operational infrastructure for scale. Two engines working in tandem to drive revenue and efficiency.
             </p>
@@ -24,12 +24,12 @@ export default function ServicesPage() {
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <FadeIn>
-              <div className="group relative border border-[var(--color-platform-gray)] bg-[var(--color-cloud-white)] p-12 h-full hover:border-[var(--color-surmount-red)] transition-colors duration-300">
-                <div className="absolute top-0 right-0 p-8 opacity-20 group-hover:opacity-100 transition-opacity duration-300">
-                  <TrendingUp className="w-32 h-32 text-[var(--color-surmount-red)]" strokeWidth={0.5} />
+              <div className="group relative border border-[var(--color-platform-gray)] bg-[var(--color-cloud-white)] p-8 sm:p-10 md:p-12 h-full hover:border-[var(--color-surmount-red)] transition-colors duration-300">
+                <div className="absolute top-0 right-0 p-4 sm:p-8 opacity-20 group-hover:opacity-100 transition-opacity duration-300">
+                  <TrendingUp className="w-20 h-20 sm:w-32 sm:h-32 text-[var(--color-surmount-red)]" strokeWidth={0.5} />
                 </div>
                 <div className="relative z-10">
-                  <h2 className="text-4xl font-display mb-6">Fractional CRO</h2>
+                  <h2 className="text-3xl sm:text-4xl font-display mb-6">Fractional CRO</h2>
                   <p className="text-xl text-[var(--color-deep-charcoal)] mb-8 leading-relaxed">
                     Embedded revenue leadership to fix your funnel, hire your team, and build a predictable sales machine.
                   </p>
@@ -46,12 +46,12 @@ export default function ServicesPage() {
             </FadeIn>
 
             <FadeIn delay={0.2}>
-              <div className="group relative border border-[var(--color-platform-gray)] bg-[var(--color-cloud-white)] p-12 h-full hover:border-[var(--color-surmount-red)] transition-colors duration-300">
-                 <div className="absolute top-0 right-0 p-8 opacity-20 group-hover:opacity-100 transition-opacity duration-300">
-                  <Globe2 className="w-32 h-32 text-[var(--color-surmount-red)]" strokeWidth={0.5} />
+              <div className="group relative border border-[var(--color-platform-gray)] bg-[var(--color-cloud-white)] p-8 sm:p-10 md:p-12 h-full hover:border-[var(--color-surmount-red)] transition-colors duration-300">
+                 <div className="absolute top-0 right-0 p-4 sm:p-8 opacity-20 group-hover:opacity-100 transition-opacity duration-300">
+                  <Globe2 className="w-20 h-20 sm:w-32 sm:h-32 text-[var(--color-surmount-red)]" strokeWidth={0.5} />
                 </div>
                 <div className="relative z-10">
-                  <h2 className="text-4xl font-display mb-6">GCC Accelerator</h2>
+                  <h2 className="text-3xl sm:text-4xl font-display mb-6">GCC Accelerator</h2>
                   <p className="text-xl text-[var(--color-deep-charcoal)] mb-8 leading-relaxed">
                     Launch your own Global Capability Center. Access top-tier engineering and product talent owned by you, not a vendor.
                   </p>

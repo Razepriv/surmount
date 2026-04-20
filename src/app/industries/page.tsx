@@ -49,10 +49,10 @@ const industries = [
 export default function IndustriesPage() {
   return (
     <main className="min-h-screen bg-[var(--color-cloud-white)]">
-       <Section className="relative pt-48 pb-24 bg-[var(--color-summit-black)] text-white">
+       <Section className="relative pt-32 sm:pt-40 md:pt-48 pb-16 md:pb-24 bg-[var(--color-summit-black)] text-white">
         <Container>
           <FadeIn direction="up">
-            <h1 className="text-5xl md:text-8xl font-display mb-8">Industries</h1>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display mb-8">Industries</h1>
             <p className="text-xl md:text-2xl font-light text-white/80 max-w-2xl leading-relaxed">
               We specialize in high-growth verticals where operational excellence is the key differentiator.
             </p>
