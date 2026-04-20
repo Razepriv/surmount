@@ -5,6 +5,7 @@ import { Section } from "@/components/ui/Section";
 import { FadeIn } from "@/components/anim/FadeIn";
 import { Mail, Calendar, MapPin, Phone, Globe2 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { CalEmbed } from "@/components/CalEmbed";
 
 const offices = [
   { city: "Austin, TX", flag: "🇺🇸", label: "HQ" },
@@ -49,24 +50,9 @@ export default function ContactPage() {
                   Skip the back-and-forth. Book a 30-minute strategy session directly with a Surmount managing partner. We&apos;ll diagnose your top revenue bottleneck live.
                 </p>
 
-                {/* Calendly Embed Placeholder */}
-                <div className="flex-grow bg-white border border-[var(--color-platform-gray)] rounded-sm overflow-hidden min-h-[360px] flex flex-col items-center justify-center relative">
-                  <div className="text-center p-8">
-                    <Calendar className="w-12 h-12 text-[var(--color-surmount-red)] mx-auto mb-4" />
-                    <h3 className="text-xl font-display mb-3">Schedule Your Call</h3>
-                    <p className="text-sm text-[var(--color-stone-gray)] mb-6 max-w-xs mx-auto">
-                      Pick a time that works. We&apos;ll come prepared with initial observations about your revenue model.
-                    </p>
-                    {/* Replace with actual Calendly embed: <div className="calendly-inline-widget" data-url="YOUR_CALENDLY_URL" style={{minWidth:320,height:580}}></div> */}
-                    <a
-                      href="https://calendly.com/surmountcxo/discovery"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center h-14 px-8 text-lg font-medium bg-[var(--color-surmount-red)] text-white hover:bg-[#B91217] transition-colors"
-                    >
-                      Open Calendar
-                    </a>
-                  </div>
+                {/* Cal.com inline embed */}
+                <div className="flex-grow bg-white border border-[var(--color-platform-gray)] rounded-sm overflow-hidden min-h-[640px]">
+                  <CalEmbed />
                 </div>
               </div>
             </FadeIn>

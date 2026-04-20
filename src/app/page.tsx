@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { ArrowRight, BarChart3, Globe2, LayoutTemplate } from "lucide-react";
+import { ArrowRight, BarChart3, Globe2, LayoutTemplate, Brain, Server, Wifi, Cpu, ShoppingBag, FlaskConical, Sparkles } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Section } from "@/components/ui/Section";
@@ -31,7 +31,7 @@ export default function Home() {
                 We Build <br/> Revenue Engines. <br/> <span className="text-[var(--color-stone-gray)]">We Scale Execution.</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-[var(--color-deep-charcoal)] max-w-lg leading-relaxed font-light">
-                Fractional CRO leadership and GCC acceleration for mid-market growth companies.
+                Fractional CRO leadership, GCC acceleration, and Skills AI for mid-market growth companies.
               </p>
             </div>
             
@@ -71,10 +71,10 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* 4.1 Section 2: Two Engines (Split Panel) */}
+      {/* 4.1 Section 2: Three Engines (Split Panel) */}
       <section className="relative w-full bg-white border-y border-[var(--color-terrain-beige)]/30">
-        <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-[var(--color-terrain-beige)]/30">
-          <Link href="/services/fractional-cro" className="group relative p-8 sm:p-12 md:p-16 lg:p-24 flex flex-col justify-between min-h-[320px] md:min-h-[400px] hover:bg-gray-50 transition-colors">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 divide-y lg:divide-y-0 md:divide-x divide-[var(--color-terrain-beige)]/30">
+          <Link href="/services/fractional-cro" className="group relative p-8 sm:p-12 md:p-12 lg:p-16 xl:p-20 flex flex-col justify-between min-h-[320px] md:min-h-[400px] hover:bg-gray-50 transition-colors">
             <div className="space-y-6">
                <div className="w-12 h-12 rounded-full bg-[var(--color-surmount-red)]/5 flex items-center justify-center text-[var(--color-surmount-red)] group-hover:scale-110 transition-transform duration-300">
                   <BarChart3 size={24} />
@@ -86,14 +86,27 @@ export default function Home() {
               Learn More <ArrowRight className="ml-2 w-4 h-4" />
             </div>
           </Link>
-          
-          <Link href="/services/gcc-accelerator" className="group relative p-8 sm:p-12 md:p-16 lg:p-24 flex flex-col justify-between min-h-[320px] md:min-h-[400px] hover:bg-gray-50 transition-colors">
+
+          <Link href="/services/gcc-accelerator" className="group relative p-8 sm:p-12 md:p-12 lg:p-16 xl:p-20 flex flex-col justify-between min-h-[320px] md:min-h-[400px] hover:bg-gray-50 transition-colors md:border-l-0 lg:border-l lg:border-[var(--color-terrain-beige)]/30">
             <div className="space-y-6">
                <div className="w-12 h-12 rounded-full bg-[var(--color-surmount-red)]/5 flex items-center justify-center text-[var(--color-surmount-red)] group-hover:scale-110 transition-transform duration-300">
                   <Globe2 size={24} />
                </div>
                <h3 className="text-3xl font-display text-[var(--color-summit-black)] group-hover:text-[var(--color-surmount-red)] transition-colors">GCC Accelerator</h3>
-               <p className="text-[var(--color-deep-charcoal)] max-w-sm">Build, scale, and optimize your global capability center — led by operators with 20–30 years of experience in scaling global operations.</p>
+               <p className="text-[var(--color-deep-charcoal)] max-w-sm">Build, scale, and optimize your global capability center &mdash; led by operators with 20&ndash;30 years of experience in scaling global operations.</p>
+            </div>
+            <div className="mt-12 flex items-center text-sm font-medium uppercase tracking-wide group-hover:translate-x-2 transition-transform">
+              Learn More <ArrowRight className="ml-2 w-4 h-4" />
+            </div>
+          </Link>
+
+          <Link href="/services/skills-ai" className="group relative p-8 sm:p-12 md:p-12 lg:p-16 xl:p-20 flex flex-col justify-between min-h-[320px] md:min-h-[400px] hover:bg-gray-50 transition-colors md:col-span-2 lg:col-span-1 md:border-t md:border-[var(--color-terrain-beige)]/30 lg:border-t-0">
+            <div className="space-y-6">
+               <div className="w-12 h-12 rounded-full bg-[var(--color-surmount-red)]/5 flex items-center justify-center text-[var(--color-surmount-red)] group-hover:scale-110 transition-transform duration-300">
+                  <Brain size={24} />
+               </div>
+               <h3 className="text-3xl font-display text-[var(--color-summit-black)] group-hover:text-[var(--color-surmount-red)] transition-colors">Skills AI</h3>
+               <p className="text-[var(--color-deep-charcoal)] max-w-sm">Equip your revenue teams with AI-native skills, tooling, and workflows. Turn operators into 10x executors without replacing them.</p>
             </div>
             <div className="mt-12 flex items-center text-sm font-medium uppercase tracking-wide group-hover:translate-x-2 transition-transform">
               Learn More <ArrowRight className="ml-2 w-4 h-4" />
@@ -122,29 +135,47 @@ export default function Home() {
       </Section>
       
       {/* Sectors We've Scaled */}
-      <section className="bg-white border-b border-[var(--color-terrain-beige)]/30 py-6">
+      <Section className="bg-white border-b border-[var(--color-terrain-beige)]/30">
         <Container>
-          <div className="flex flex-wrap items-center gap-3">
-            <span className="text-sm uppercase tracking-widest text-[var(--color-stone-gray)] mr-4 font-medium">Sectors We&apos;ve Scaled:</span>
+          <div className="mb-10 md:mb-12 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+            <div>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-display mb-4">Sectors We&apos;ve Scaled</h2>
+              <p className="text-[var(--color-deep-charcoal)]/70 max-w-xl">
+                High-growth verticals where operational excellence is the key differentiator.
+              </p>
+            </div>
+            <p className="text-xs font-mono uppercase tracking-widest text-[var(--color-stone-gray)]">
+              <span className="text-[var(--color-surmount-red)]">Red</span> indicates verticals Surmount has directly assisted.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { name: "Enterprise SaaS", assisted: true },
-              { name: "IoT", assisted: true },
-              { name: "Developer-Led Hardware", assisted: true },
-              { name: "E-Commerce", assisted: false },
-              { name: "Deep Tech", assisted: false },
-              { name: "AI", assisted: false },
-            ].map((v, i) => (
-              <span key={i} className={`text-sm font-mono uppercase tracking-widest px-3 py-1 border ${
-                v.assisted
-                  ? "text-[var(--color-surmount-red)] border-[var(--color-surmount-red)]/30 bg-[var(--color-surmount-red)]/5"
-                  : "text-[var(--color-stone-gray)] border-[var(--color-terrain-beige)]"
-              }`}>
-                {v.name}
-              </span>
+              { title: "Enterprise SaaS", icon: Server, desc: "Scaling complex B2B sales cycles and recurring revenue models. From seed-stage PLG to enterprise-led growth.", assisted: true },
+              { title: "IoT", icon: Wifi, desc: "Bridging hardware and software sales motions to drive adoption across connected device ecosystems.", assisted: true },
+              { title: "Developer-Led Hardware", icon: Cpu, desc: "Commercializing developer platforms and purpose-built hardware for engineering-driven buyer communities.", assisted: true },
+              { title: "E-Commerce", icon: ShoppingBag, desc: "Infrastructure and logistics software powering the next generation of retail and direct-to-consumer brands.", assisted: false },
+              { title: "Deep Tech", icon: FlaskConical, desc: "Translating breakthrough science and research into commercially viable products with a repeatable go-to-market.", assisted: false },
+              { title: "AI", icon: Sparkles, desc: "Building revenue systems for AI-native companies navigating rapid product evolution and category creation.", assisted: false },
+            ].map((item, i) => (
+              <FadeIn key={i} delay={i * 0.05}>
+                <div className="h-full p-6 sm:p-8 bg-white border border-[var(--color-platform-gray)] hover:border-[var(--color-surmount-red)] transition-colors duration-300">
+                  <item.icon className="w-10 h-10 text-[var(--color-surmount-red)] mb-5" strokeWidth={1} />
+                  <h3 className={`text-xl sm:text-2xl font-display mb-3 ${item.assisted ? "text-[var(--color-surmount-red)]" : "text-[var(--color-summit-black)]"}`}>
+                    {item.title}
+                    {item.assisted && (
+                      <span className="ml-2 text-[10px] sm:text-xs font-mono font-normal uppercase tracking-widest align-middle opacity-70">&#10003; Assisted</span>
+                    )}
+                  </h3>
+                  <p className="text-sm sm:text-base text-[var(--color-deep-charcoal)] leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+              </FadeIn>
             ))}
           </div>
         </Container>
-      </section>
+      </Section>
 
       {/* 4.1 Section 5: Differentiation Pillars */}
       <Section className="bg-[var(--color-cloud-white)]">

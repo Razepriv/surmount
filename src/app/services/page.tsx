@@ -4,7 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { FadeIn } from "@/components/anim/FadeIn";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight, Globe2, TrendingUp } from "lucide-react";
+import { ArrowRight, Globe2, TrendingUp, Brain } from "lucide-react";
 
 export default function ServicesPage() {
   return (
@@ -14,7 +14,7 @@ export default function ServicesPage() {
           <FadeIn direction="up">
             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display mb-8">Our Services</h1>
             <p className="text-xl md:text-2xl font-light text-white/80 max-w-2xl leading-relaxed">
-              We provide the operational infrastructure for scale. Two engines working in tandem to drive revenue and efficiency.
+              We provide the operational infrastructure for scale. Three engines working in tandem to drive revenue, talent, and AI-native execution.
             </p>
           </FadeIn>
         </Container>
@@ -22,7 +22,7 @@ export default function ServicesPage() {
 
       <Section className="bg-white">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             <FadeIn>
               <div className="group relative border border-[var(--color-platform-gray)] bg-[var(--color-cloud-white)] p-8 sm:p-10 md:p-12 h-full hover:border-[var(--color-surmount-red)] transition-colors duration-300">
                 <div className="absolute top-0 right-0 p-4 sm:p-8 opacity-20 group-hover:opacity-100 transition-opacity duration-300">
@@ -61,6 +61,28 @@ export default function ServicesPage() {
                     <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-[var(--color-surmount-red)] rounded-full"></span>Talent Acquisition</li>
                   </ul>
                   <Button variant="outline" href="/services/gcc-accelerator" className="group-hover:bg-[var(--color-summit-black)] group-hover:text-white group-hover:border-[var(--color-summit-black)]">
+                    Explore Service <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                </div>
+              </div>
+            </FadeIn>
+
+            <FadeIn delay={0.4}>
+              <div className="group relative border border-[var(--color-platform-gray)] bg-[var(--color-cloud-white)] p-8 sm:p-10 md:p-12 h-full hover:border-[var(--color-surmount-red)] transition-colors duration-300">
+                <div className="absolute top-0 right-0 p-4 sm:p-8 opacity-20 group-hover:opacity-100 transition-opacity duration-300">
+                  <Brain className="w-20 h-20 sm:w-32 sm:h-32 text-[var(--color-surmount-red)]" strokeWidth={0.5} />
+                </div>
+                <div className="relative z-10">
+                  <h2 className="text-3xl sm:text-4xl font-display mb-6">Skills AI</h2>
+                  <p className="text-xl text-[var(--color-deep-charcoal)] mb-8 leading-relaxed">
+                    Equip your revenue teams with AI-native skills, tooling, and workflows. Turn your operators into 10x executors.
+                  </p>
+                  <ul className="space-y-4 mb-12 text-[var(--color-stone-gray)]">
+                    <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-[var(--color-surmount-red)] rounded-full"></span>AI-Powered Prospecting</li>
+                    <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-[var(--color-surmount-red)] rounded-full"></span>RevOps Copilots</li>
+                    <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-[var(--color-surmount-red)] rounded-full"></span>Enablement Automation</li>
+                  </ul>
+                  <Button variant="outline" href="/services/skills-ai" className="group-hover:bg-[var(--color-summit-black)] group-hover:text-white group-hover:border-[var(--color-summit-black)]">
                     Explore Service <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </div>

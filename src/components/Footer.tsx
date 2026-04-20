@@ -7,6 +7,7 @@ const footerLinks = {
   Services: [
     { label: "Fractional CRO", href: "/services/fractional-cro" },
     { label: "GCC Accelerator", href: "/services/gcc-accelerator" },
+    { label: "Skills AI", href: "/services/skills-ai" },
     { label: "Revenue Reset", href: "/services/revenue-reset" },
   ],
   Company: [
