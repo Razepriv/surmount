@@ -22,8 +22,8 @@ export default function FractionalCROPage() {
               Embedded revenue leadership. Not advisory. Not consulting. Operator-level execution.
             </p>
             <div className="flex gap-4">
-              <Button href="/contact" size="lg" className="bg-white text-[var(--color-summit-black)] hover:bg-gray-100">
-                Book a Strategy Call
+              <Button href="/contact" variant="cta" size="lg">
+                Book a Fractional CRO Discovery Call
               </Button>
             </div>
           </FadeIn>
@@ -162,7 +162,7 @@ export default function FractionalCROPage() {
 
           <div className="mt-16 text-center">
             <p className="text-[var(--color-deep-charcoal)]/70 mb-6">Pricing is scoped to each engagement. Let&apos;s find the right fit for your business.</p>
-            <Button href="/contact" size="lg">Book a Strategy Call</Button>
+            <Button href="/contact" variant="cta" size="lg">Book a Fractional CRO Discovery Call</Button>
           </div>
         </Container>
       </Section>

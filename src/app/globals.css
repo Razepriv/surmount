@@ -8,6 +8,7 @@
   --color-stone-gray: #888888;
   --color-deep-charcoal: #333333;
   --color-platform-gray: #E0DDD8;
+  --color-cta-gold: #E8A817;
   --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-display: var(--font-playfair), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;

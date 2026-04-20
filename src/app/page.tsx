@@ -36,13 +36,16 @@ export default function Home() {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button href="/contact" size="lg">
-                Schedule a Diagnostic
+              <Button href="/contact" variant="cta" size="lg">
+                Get Your Revenue Diagnostic
               </Button>
               <Button href="/services" variant="outline" size="lg">
                 Explore Services
               </Button>
             </div>
+            <p className="text-sm text-[var(--color-stone-gray)] -mt-2">
+              See exactly where your growth is stalling &mdash; in 30 days.
+            </p>
           </FadeIn>
           
           <div className="hidden md:block absolute right-0 top-0 w-1/2 h-full z-0">
@@ -173,8 +176,9 @@ export default function Home() {
       <Section className="bg-[var(--color-deep-charcoal)] text-white text-center">
         <Container className="flex flex-col items-center gap-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display">Ready to Build Your Revenue Engine?</h2>
-          <Button href="/contact" size="lg" className="bg-white text-[var(--color-surmount-red)] hover:bg-[var(--color-cloud-white)]">
-            Schedule a Strategy Call
+          <p className="text-white/60 max-w-lg text-lg">Find out where your pipeline is leaking and what to fix first.</p>
+          <Button href="/contact" variant="cta" size="lg">
+            Get Your Revenue Diagnostic
           </Button>
         </Container>
       </Section>

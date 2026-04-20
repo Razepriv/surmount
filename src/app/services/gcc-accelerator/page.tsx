@@ -22,8 +22,8 @@ export default function GCCAcceleratorPage() {
               Build, scale, and optimize your global capability center — with optional transfer readiness.
             </p>
             <div className="flex gap-4">
-              <Button href="/contact" size="lg" className="bg-white text-[var(--color-summit-black)] hover:bg-gray-100">
-                Start Your Blueprint
+              <Button href="/contact" variant="cta" size="lg">
+                Build Your GCC Team &mdash; Own Your Talent
               </Button>
             </div>
           </FadeIn>
@@ -132,7 +132,7 @@ export default function GCCAcceleratorPage() {
                   </li>
                 ))}
               </ul>
-              <Button href="/contact" size="lg" className="bg-white text-[var(--color-summit-black)] hover:bg-gray-100">
+              <Button href="/contact" variant="cta" size="lg">
                 Explore US Expansion
               </Button>
             </FadeIn>
@@ -230,8 +230,8 @@ export default function GCCAcceleratorPage() {
       <Section className="bg-[var(--color-deep-charcoal)] text-white text-center">
         <Container>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display mb-8">Ready to Scale Globally?</h2>
-          <Button href="/contact" size="lg" className="bg-white text-[var(--color-surmount-red)] hover:bg-[var(--color-cloud-white)]">
-             Compare Locations
+          <Button href="/contact" variant="cta" size="lg">
+             Build Your GCC Team &mdash; Own Your Talent
           </Button>
         </Container>
       </Section>

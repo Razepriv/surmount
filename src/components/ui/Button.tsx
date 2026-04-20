@@ -12,6 +12,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary: "bg-[var(--color-surmount-red)] text-white hover:bg-[#B91217] shadow-md hover:shadow-lg",
+        cta: "bg-[var(--color-cta-gold)] text-[var(--color-summit-black)] hover:bg-[#D49A12] shadow-lg hover:shadow-xl font-semibold",
         secondary: "bg-[var(--color-summit-black)] text-white hover:bg-[var(--color-deep-charcoal)]",
         outline: "border border-[var(--color-summit-black)] text-[var(--color-summit-black)] hover:bg-[var(--color-summit-black)]/5",
         ghost: "text-[var(--color-summit-black)] hover:text-[var(--color-surmount-red)] hover:bg-[var(--color-surmount-red)]/5",
