@@ -69,7 +69,7 @@ export default function NinetyDayRevenueResetPage() {
             <article className="prose-article">
               {/* Intro */}
               <p className="text-lg md:text-xl text-[var(--color-deep-charcoal)] leading-relaxed mb-8 font-light">
-                Every B2B company that has stalled between $5M and $50M in revenue shares a
+                Every B2B company that has stalled between $5M and $150M in revenue shares a
                 common pattern. The systems that carried the business through its first stage of
                 growth are now the same systems holding it back. The pipeline is murky. Forecast
                 accuracy is poor. Sales and marketing blame each other. And the CEO knows

@@ -38,7 +38,7 @@ const insights = [
   {
     category: "Execution",
     title: "The 5 Revenue System Mistakes That Stall Mid-Market Scaling",
-    excerpt: "Most companies between $5M and $50M ARR hit the same walls. Here are the five systemic mistakes that create growth ceilings — and how to break through them.",
+    excerpt: "Most companies between $5M and $150M ARR hit the same walls. Here are the five systemic mistakes that create growth ceilings — and how to break through them.",
     date: "Dec 10, 2025",
     readTime: "7 min read",
     author: "Surmount Team",

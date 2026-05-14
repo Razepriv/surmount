@@ -69,7 +69,7 @@ export default function WhenToHireFractionalCROPage() {
             <article className="prose-article">
               {/* Intro */}
               <p className="text-lg md:text-xl text-[var(--color-deep-charcoal)] leading-relaxed mb-8 font-light">
-                For mid-market B2B companies generating between $5M and $50M in annual revenue,
+                For mid-market B2B companies generating between $5M and $150M in annual revenue,
                 the decision to bring on a Chief Revenue Officer is one of the most consequential
                 hiring choices a CEO can make. Get it right, and you unlock the next stage of
                 growth. Get it wrong, and you burn through six figures of salary, equity, and
