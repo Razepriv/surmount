@@ -149,7 +149,7 @@ export default function SkillsAIPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {domains.map((d, i) => (
               <FadeIn key={i} delay={(i % 4) * 0.05}>
                 <Card className="h-full flex flex-col group hover:border-[var(--color-surmount-red)] bg-white">

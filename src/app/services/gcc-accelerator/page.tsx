@@ -24,14 +24,17 @@ export default function GCCAcceleratorPage() {
             <p className="text-lg md:text-xl text-white/80 max-w-xl mb-8 font-light leading-relaxed">
               Launch a fully owned India-based Global Capability Center in 16&ndash;24 weeks. Capture <span className="text-white font-medium">40&ndash;60% in annual cost savings</span>, <span className="text-white font-medium">400%+ 3-year ROI</span>, and <span className="text-white font-medium">12&ndash;18 month payback</span>. We run the full journey &mdash; you own everything.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button href="/contact" variant="cta" size="lg">
-                Build Your GCC Team &mdash; Own Your Talent
+            <div className="flex flex-col sm:flex-row flex-wrap gap-4">
+              <Button href="/contact" variant="cta" size="lg" className="whitespace-nowrap">
+                Build Your GCC Team
               </Button>
-              <Button href="/contact" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-[var(--color-summit-black)]">
+              <Button href="/contact" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-[var(--color-summit-black)] whitespace-nowrap">
                 Free Workshop Assessment
               </Button>
             </div>
+            <p className="text-sm text-white/60 mt-3 italic">
+              Own your talent. Own your IP. Own your competitive edge.
+            </p>
           </FadeIn>
 
           <div className="hidden md:block h-full w-full relative">
@@ -210,7 +213,7 @@ export default function GCCAcceleratorPage() {
             </Card>
 
             <Card variant="outline" className="border border-[var(--color-terrain-beige)] h-full">
-              <h3 className="text-2xl font-display mb-2">Build-Operate-Transfer</h3>
+              <h3 className="text-xl sm:text-2xl font-display mb-2 leading-tight">Build-Operate-Transfer</h3>
               <p className="text-sm text-[var(--color-stone-gray)] mb-6 uppercase tracking-widest">Managed GCC (BOT)</p>
               <p className="text-sm text-[var(--color-deep-charcoal)]/80 mb-6 italic">
                 For companies wanting zero operational risk before ownership.
@@ -260,7 +263,7 @@ export default function GCCAcceleratorPage() {
       </Section>
 
       {/* Agentic AI Integration */}
-      <Section className="bg-[var(--color-summit-black)] text-white">
+      <Section className="bg-[var(--color-deep-charcoal)] text-white">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <FadeIn direction="up">

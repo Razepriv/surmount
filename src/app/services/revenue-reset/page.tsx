@@ -195,7 +195,7 @@ export default function RevenueResetPage() {
               { value: "12 Months", label: "GTM Roadmap Horizon" },
             ].map((stat, i) => (
               <FadeIn key={i} delay={i * 0.1} className="flex flex-col gap-2">
-                <span className="text-2xl sm:text-3xl md:text-4xl font-mono text-[var(--color-surmount-red)]">{stat.value}</span>
+                <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-mono text-[var(--color-surmount-red)] break-words">{stat.value}</span>
                 <span className="text-xs sm:text-sm uppercase tracking-widest text-white/60">{stat.label}</span>
               </FadeIn>
             ))}

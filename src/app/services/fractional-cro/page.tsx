@@ -126,7 +126,7 @@ export default function FractionalCROPage() {
         <Container>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display mb-10 md:mb-16 text-center">Engagement Models</h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-start">
             {/* Tier 01: Revenue Reset */}
             <Card variant="outline" className="border border-[var(--color-terrain-beige)] h-full">
               <div className="font-mono text-xs text-[var(--color-stone-gray)] mb-2">01</div>
